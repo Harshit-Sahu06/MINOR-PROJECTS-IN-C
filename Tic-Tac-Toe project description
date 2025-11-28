@@ -1,0 +1,82 @@
+# 🎮 Tic-Tac-Toe Game in C
+
+A simple yet feature-rich **Tic-Tac-Toe game** built in C, where the player competes against the computer. The game includes **difficulty levels**, **score tracking**, and a smart computer AI that can block, win, and even play strategically.
+
+---
+
+## 🚀 Features
+
+### ✅ **1. Two Difficulty Levels**
+- **Medium:** Basic AI that makes straightforward moves.
+- **Hard (Impossible Mode):** Intelligent AI that:
+  - Tries to win immediately  
+  - Blocks player winning moves  
+  - Prioritizes center  
+  - Plays corners strategically  
+  - Falls back to first available move  
+This makes it nearly impossible for the player to win.
+
+---
+
+### ✅ **2. Smart Computer AI**
+The computer’s decision system includes:
+1. Looking for immediate winning moves  
+2. Preventing player wins  
+3. Playing optimal center and corner positions  
+4. Using fallback moves when no strategic moves are available  
+
+---
+
+### ✅ **3. Random Starter**
+Each game randomly chooses whether the **player (X)** or **computer (O)** will start—making gameplay more dynamic.
+
+---
+
+### ✅ **4. Score Tracking**
+The game maintains scores across multiple rounds:
+- **Player Wins**
+- **Computer Wins**
+- **Draws**
+
+Scores persist until the program exits.
+
+---
+
+### ✅ **5. Clean Console UI**
+- Clear board rendering  
+- “cls/clear” for smooth refreshing  
+- Indicates turns, results, and score
+
+---
+
+### ✅ **6. Input Validation**
+Ensures the player enters:
+- Valid row/column numbers (1–3)
+- A valid difficulty level  
+- A valid choice to restart the game  
+
+---
+
+## 🧠 How the AI Works (Simplified)
+
+The computer follows this exact decision logic:
+
+1. **Try to win**  
+   Place 'O' somewhere that immediately makes the computer win.
+
+2. **Try to block**  
+   If the player can win next turn, block them.
+
+3. **Hard Mode Extra Logic:**  
+   - If the center is empty → take it  
+   - Else take any available corner  
+
+4. **Else**  
+   Take the first available empty cell.
+
+This logic makes the “Hard Mode” feel very challenging.
+
+---
+
+## 📂 File Structure
+
